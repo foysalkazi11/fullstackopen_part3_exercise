@@ -37,6 +37,11 @@ app.use(cors());
 app.use(express.json());
 app.use(morganMiddleware());
 
+// root route
+app.get("/", (req, res) => {
+  res.send("Hello world from express server");
+});
+
 // get info
 app.get("/info", (req, res) => {
   res.send(`<div>
