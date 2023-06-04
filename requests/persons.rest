@@ -2,16 +2,24 @@
 #GET  http://localhost:3001/api/persons
 
 // get single persons
-#GET http://localhost:3001/api/persons/1
+#GET http://localhost:3001/api/persons/5c41c90e84d891c15dfa3431
 
 // delete a single persons
-#DELETE  http://localhost:3001/api/persons/3780877137
+#DELETE  http://localhost:3001/api/persons/64781d84156d5629169b66cf
 
 // create a new persons
-POST  http://localhost:3001/api/persons
+#PUT http://localhost:3001/api/persons/647a881f53f08e99bf68add8
 Content-Type: application/json
 
 {
-    "name": "Foysal",
+    "name": "helloooo",
+    "number": "39-44-5323523"
+}
+
+#POST  http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Foysal kazi",
     "number": "39-44-5323523"
 }

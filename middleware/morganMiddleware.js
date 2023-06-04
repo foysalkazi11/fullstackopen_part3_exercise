@@ -1,6 +1,6 @@
 const morgan = require("morgan");
 
-morgan.token("body", function logRequestBody(req, res) {
+morgan.token("body", function logRequestBody(req) {
   return JSON.stringify(req.body);
 });
 
